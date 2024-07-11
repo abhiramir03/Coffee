@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brew Beans Co.</title>
+
+    <!-- css -->
+
+    <link rel="stylesheet" href="style.css">
+    <!-- fav icon -->
+         <link rel="icon" href="data:image/png;base64,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">
+
+     <!-- fontawesom -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+     <!-- google fonts -->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap" rel="stylesheet">
+
+     <!-- bootstrap -->
+
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+</head>
+<body style="background-color: rgb(241, 198, 99); overflow-x: hidden; width: 100%; margin: 0; padding: 0; height: fit-content;">
+
+    <!-- nav -->
+
+    
+        <div class="row " style="background-color: rgb(238, 163, 64); ">
+            <div style="margin-top: px;" class="col-2 ">
+                <img src="https://brewscoffee.netlify.app/icon.webp" width="120px" height="120px" alt="" style=" margin-left: 110px;">
+            </div>
+            <div class="col-10 " > 
+                <h1 class="brewbeans">BREW BEANS CO.</h1></div>
+            </div>
+
+       
+            <div class="col-12 text-center"id="text1"><h6 style="font-weight: bolder;" class=" text-center">Drink Coffee, Live Forever !!</h6></div>
+
+   
+
+
+    <!-- contant -->
+
+    <section class="content ">
+        <h1 class="text-center mt-5" id="content">Coffee taster better when it is <b style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">strong ! <br>Do you agree?</b></h1>
+
+        <p class="border border-1 border-dark container p-5 mt-5" id="contant-paragraph">A 2017 review of clinical trials found that drinking coffee is generally safe within usual 
+             levels of intake and is more likely to improve health outcomes than to cause harm at 
+              doses of 3 or 4 cups of coffee daily. Exceptions include possible increased risk in women 
+              having bone fractures, and a possible increased risk in
+              pregnant women of fetal loss or decreased birth weight.
+             Results were complicated by poor study quality, and differences in age, gender, health status, and serving size.
+            
+            </p>
+
+    </section>
+
+
+    <!-- types -->
+
+    <div class="row  p-4 m-1">
+
+       <div class="col-11"> <h1 id="subheading" class="text-center ps-5 ms-5 pb-0">
+           <p> TYPES</p>
+        </h1></div>
+        <div class="col-1"><img src="https://cdn-icons-png.flaticon.com/512/1017/1017519.png" width="50px" height="50px" alt="" style="position: fixed ;"></div>
+    </div>
+ 
+    <p class="m-5" id="types-first-section">Coffee beans are the seeds of a fruit called a coffee cherry. Coffee cherries grow on coffee trees from a genus of plants called Coffea. There are a wide variety of species of coffee plants, ranging from shrubs to trees.</p>
+
+    <ul class="container">
+        <li class="types-contant "><b >Type of bean.</b> There are two main types of coffee species, Arabica and Robusta. Arabica originates from Ethiopia and produces a mild, flavorful tasting coffee. It is the most popular type worldwide. However, it is expensive to grow because the Arabica plant is sensitive to the environment, requiring shade, humidity, and steady temperatures between 60-75 degrees Fahrenheit. The Robusta coffee plant is more economical to grow because it is resistant to disease and survives in a wider range of temperatures between 65 - 97 degrees Fahrenheit. It can also withstand harsh climate changes such as variations in rainfall and strong sunlight.
+        </li><br>
+        <li class="types-contant "><b >Type of roast.</b> Coffee beans start out green. They are roasted at a high heat to produce a chemical change that releases the rich aroma and flavor associate with coffee. They are then cooled and ground for brewing. Roasting levels range from light to medium to dark. The lighter the roast, lighter the color and roasted flavor and the higher its acidity and a bitter roasted flavor. The popular french roast is medium-dark</li>
+        <br><li class="types-contant "><b >Type of grind.</b> A medium grind is the most common and used for automatic drip coffee makers. A fine grind is used for deeper flavors like espresso, releases the oils, and a coarse grind is used in coffee presses.</li>
+        <br><li class="types-contant"><b>Decaffeinated coffee.</b> This is an option for those who experience unpleasant side effects from caffeine. The two rnost cormon mnethods used to remove apply beans, caffeine regulations, which from at are coffee least then is 97% to of allowed the to chemical dry. caffeine The must solvents solvents be removed bind (methylene to to carry caffeine chloride the and Or both cthyl decaffeinated acctate) evaporate label, Or when carbon there the dioxide may beans be gas. are trace Both rinsed are residual andjor amounts dried. to of stcamed used According caffeine. or to soaked Both U.S. applied methods may cause somne loss of flavor as other naturally occurring chemicals in coffee beans that impart their unique flavor and scent may be destroyed during processing.</li>
+    </ul>
+
+
+    <!-- top brands -->
+
+     <div id="subheading" class="text-center"><p>TOP BRANDS</p></div>
+
+     <div class="row m-5 container">
+
+        <div class="col-4 " id="top-brand-img"><img src="https://brewscoffee.netlify.app/STARBUCKS.jpg" width="260px" height="260px" alt="" style="border-radius: 25px; margin-left: 55px;"></div>
+
+        <div class="col-8">
+          <h4 style="font-weight: bolder;" class=" top-brand-sub-heading">1.STARBUCKS</h4>
+          <P class="topbrand-paragraph">The brand is not known for sourcing and roasting the best coffee beans. Most of their coffee beans are dark roasted meaning, they taste bitter. And many consumers, who know their coffee, complain that Starbucks coffee has a distinct burnt taste</P>
+        </div>
+
+
+        <div class="row m-5 ">
+
+            <div class="col-9">
+                <h4 style="font-weight: bolder;" class="top-brand-sub-heading">2. Dunkin' Donuts</h4>
+                <P class="topbrand-paragraph">TBill Rosenberg opened Open Kettle in 1948, a restaurant selling donuts and coffee in Quincy, Massachusetts (a suburb of Boston), but he changed the name in 1950 to Dunkin' Donuts after discussing with company executives.[11][12] He conceived the idea for the restaurant after his experiences selling food in factories and at construction sites, where donuts and coffee were the two most popular items.</P></div>
+            <div class="col-3" id="top-brand-img"><img src="https://tse1.mm.bing.net/th?id=OIP.A1LaXB7aCDvKu1XLESKxIAD6D6&pid=Api&P=0" width="260px" height="260px" alt="" style="border-radius: 25px;"></div>
+    
+     </div>
+
+
+     <div class="row m-5 ">
+
+        <div class="col-4 " id="top-brand-img"><img src="https://brewscoffee.netlify.app/PEET'S%20COFFEES.jpg" width="260px" height="260px" alt="" style="border-radius: 25px; margin-left: 5px;" id=""></div>
+
+        <div class="col-8" style="margin-left: -30px;">
+          <h4 style="font-weight: bolder;" class="top-brand-sub-heading">3.PEET'S COFFEE</h4>
+          <Pn class="topbrand-paragraph" >Founded in 1966, Peet’s Coffee is a San Francisco Bay Area-based specialty coffee roaster and retailer. The company sells various coffee beans, teas, and related items through its retail stores and online store. Costco is a membership warehouse club, founded in 1983 in Seattle, Washington, that offers its members a variety of products, including food, electronics, and home goods.</P>
+        </div>
+  
+        <div class="row ms-4 mt-5">
+
+            <div class="col-9">
+                <h4 style="font-weight: bolder;" class="top-brand-sub-heading">4. COSTA COFFEE</h4>
+                <P class="topbrand-paragraph">Costa Coffee was founded in London in 1971 by Sergio Costa as a wholesale operation supplying roasted coffee to caterers and specialist Italian coffee shops. It was acquired by Whitbread in 1995, sold in 2019 to The Coca-Cola Company in a deal worth £3.9bn, and has grown to 3,401 stores across 31 countries and 18,412 employees.</P></div>
+            <div class="col-3" id="top-brand-img"><img src="https://brewscoffee.netlify.app/COSTA%20COFFEE.jpg" width="260px" height="260px" alt="" style="border-radius: 25px; "></div>
+    
+     </div>
+
+     <div class="row">
+
+        <div class="col-4 " id="top-brand-img"><img src="https://brewscoffee.netlify.app/Mc%20cafe.jpg" width="260px" height="260px" alt="" style="border-radius: 25px;"></div>
+
+        <div class="col-8" style="margin-left: -30px;">
+          <h4 style="font-weight: bolder;" class="top-brand-sub-heading">5. Mc CAFE</h4>
+          <Pn class="topbrand-paragraph" >McDonald’s top brass wanted to capitalize on the growing popularity of coffee pubs which was started by the success of Starbucks and they launched the first coffee and beverage chain McCafe in Australia in the year 1993. McCafe proved to be more successful than the fast food chain itself and is the largest coffee chain in Australia and New Zealand.</P>
+        </div>
+
+<!-- gallery -->
+       
+            <div id="subheading" class="text-center"><p>GALLERY</p></div>
+     
+
+            <section class="gallery" style="background: url(https://i.pinimg.com/236x/5b/dd/e1/5bdde1e5f9d97b15ce06eb1048f52c6a.jpg); background-repeat:no-repeat; background-size: 100%; padding-bottom: 60px;">
+
+                <div class="row container text-center mt-5">
+
+                    <div class="col-4"><img src="https://brewscoffee.netlify.app/c5.jpg" width="300px" height="300px" id="gallery-img" alt=""></div>
+                    <div class="col-4"><img src="https://brewscoffee.netlify.app/c4.jpg" width="300px" height="300px" id="gallery-img" alt=""></div>
+                    <div class="col-4"><img src="https://brewscoffee.netlify.app/c6.jpg" width="300px" height="300px" id="gallery-img" alt=""></div>
+                </div>
+
+                <div class="row  text-center mt-5">
+
+                    <div class="col-4"><img src="https://brewscoffee.netlify.app/c7.jpg" width="300px" height="300px" id="gallery-img" alt=""></div>
+                    <div class="col-4"><img src="https://brewscoffee.netlify.app/c3.jpg" width="300px" height="300px" id="gallery-img" alt=""></div>
+                    <div class="col-4"><img src="https://brewscoffee.netlify.app/c1.jpg" width="300px" height="300px" id="gallery-img" alt=""></div>
+                </div>
+
+                <div class="row text-center mt-5">
+
+                    <div class="col-4"><img src="https://brewscoffee.netlify.app/c8.jpg" width="300px" height="300px" id="gallery-img" alt=""></div>
+                    <div class="col-4"><img src="https://brewscoffee.netlify.app/c2.jpg" width="300px" height="300px" id="gallery-img" alt=""></div>
+                    <div class="col-4"><img src="https://brewscoffee.netlify.app/c9.jpg" width="300px" height="300px" id="gallery-img" alt=""></div>
+                </div>
+            </section>
+
+
+            <!--have some quary  -->
+
+
+            <div id="subheading" class="text-center mt-5"><p>Have Some Query?</p></div>
+
+
+            <section class="w-75 mt-3 mb-5" style="background-color: rgb(238, 163, 64);  margin-left: 150px; border: 2px solid black; border-radius: 25px;">
+
+               <div class="row container pt-5 px-5 ">
+                <div class="col-3" style="text-align: end; padding-top: 10px;">
+                    <label for="name">Y Name:</label>
+                </div>
+                <div class="col-9">
+                    <input type="text" class="form-control" id="name">
+                </div>
+               </div>
+
+               
+               <div class="row container pt-5 px-5">
+                <div class="col-3" style="text-align: end; padding-top: 10px;">
+                    <label for="email">Your Email:</label>
+                </div>
+                <div class="col-9">
+                    <input type="email" class="form-control" id="email">
+                </div>
+               </div>
+
+               <div class="row container p-5">
+                <div class="col-3" style="text-align: end; padding-top: 10px;">
+                    <label for="quary">Query:</label>
+                </div>
+                <div class="col-9">
+                    <textarea name="" id="quary" class="form-control"></textarea>
+                </div>
+               </div>
+
+               <button type="button" style="font-size: 20px; font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif" class="btn text-center" id="button">SEND</button>
+            </div></div></div>
+            </section>
+            
+
+            <!--footer  -->
+    <div class="row" id="footer">
+        <div class="col-4 text-center" id="footer-icon">
+            <img src="https://d29fhpw069ctt2.cloudfront.net/clipart/86776/preview/pitr_Coffee_cup_icon_preview_05af.png"  width="220px" height="220px" alt="" style="margin-top: 10px;">
+        </div>
+        <div class="col-4 text-center mt-3">
+           <h5 id="subheading"><p>Reach Us</p></h5>&nbsp;&nbsp;
+        <br>
+        <a>
+          <i class="fab fa-facebook-f"></i>Facebook&nbsp;&nbsp;
+        </a>
+        <a >
+          <i class="fab fa-twitter"></i>Twitter&nbsp;&nbsp;
+        </a>
+        <a>
+          <i class="fab fa-instagram"></i>Instagram&nbsp;&nbsp;
+        </a>
+        <br>
+        <P style="font-size: 13px; font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; padding-top: 10px;">@2023 BREW BEAN CO.</P>
+    </div>
+
+    <div class="col-4  mt-3"> <h5 id="subheading" class="text-center"><p>Address</p></h5>
+        <br>
+        <P style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; padding-top: 10px; margin-left: 80px;">
+            13031 West Jefferson Boulevard, Suite 200 <br>
+
+          Los Angeles, CA, USA <br>
+           90094 <br>
+   <br>
+   <a href="" style="text-decoration: none; margin-left: 0px; color: rgb(169, 112, 38); font-weight: bolder;">View directions</a>
+        </P>
+   
+    </div>
+    </div>
+</body>
+</html>
